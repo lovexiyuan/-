@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="test.css">
+	</head>
+	<body>
+		<header>
+		<div id="bigbox">
+			<span>ToDoList</span>
+			<input type="text" placeholder="添加ToDo" id="oInput">
+		</div>
+		<div id="list">
+			<div class="pending">
+				<h2>正在进行</h2>
+				<span id="num1">0</span>
+				<!-- 测试 -->
+<!-- 			<div class="box">
+					<p class="text"><input type="checkbox"> <em></em><b></b></p>
+				</div> -->
+			</div>
+			<div class="finish">
+				<h2>已经完成</h2>
+				<span id="num2">0</span>
+			</div>
+			
+		</div>
+		</header>
+	</body>
+</html>
+<script src="myjQuery.js"></script>
+<script>
+	//输入内容:
+	var i=0;
+	let task=0;
+	$("#oInput").keypress(function(e){
+		let oBox= $("<div class='box'><p class='text'><input type='checkbox'><b></b></p></div>");
+		let text = $("<em></em>");
+		if(e.keyCode== 13){
+			oBox.insertAfter($("#num1"));
+			$("#num1").html(i+1);
+			text.insertAfter($("input").eq(1)).html($(this).val());	
+			//保存COOKIE
+			document.cookie= task+"="+$(this).val();
+			task++;
+		}
+		i++;
+		
+		$(this).val("");
+		//点击列表左侧checkbox，可以将“正在进行”的列表项变更为“已经完成”的列表项。每个列表中的数字要跟随变动。
+		var index= i;
+		var n=0;
+		$(".text input").click(function(){
+			$(this).parent().parent($(".box")).remove().insertAfter("#num2").css({background:"gray"}).find("p").css({background:"rgb(230,230,230)"});
+			$("#num1").html(index-1);
+			$("#num2").html(n+1);
+			index--;
+			n++;
+	   });
+	   //点击列表项右侧的删除按钮可以删除列表项。
+	   $("b").click(function(){
+	   	$(this).parent().parent($(".box")).remove();
+	   	$("#num1").html(index-1);
+	   	index--;
+	   });	
+	});
+	document.cookie= task+"="+"";
+</script>

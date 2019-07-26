@@ -1,0 +1,112 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+body{
+	font-family:Arial,"微软雅黑","华文中宋";
+}
+header{
+	width:100%;	
+	height:40px;
+}
+#bigbox{
+	background:black;
+	width:800px;
+	margin:0 auto;
+	height:30px;
+	color:white;
+	padding:5px;
+}
+span{
+	font-size:18px;
+	font-weight:800;
+	margin-right:290px;
+}
+#bigbox input{
+	width:400px;
+	border-radius:5px;
+	padding:5px;
+	outline:none;
+}
+#list{
+	width:800px;
+	margin:0 auto;
+	padding:5px;
+	background:rgb(205,205,205);
+}
+h2{
+	font-size:22px;
+	height:60px;
+	line-height:60px;
+}
+.pending{
+position:relative;
+}
+#num1{
+	display:inline-block;
+	width:18px;
+	height:18px;
+	text-align:center;
+	padding-bottom:2px;
+	border-radius:10px;
+	background:rgb(230,230,251);
+	font-size:14px;
+	position:absolute;
+	left:770px;
+	top:15px;
+}
+.finish{
+position:relative;
+}
+#num2{
+	display:inline-block;
+	width:18px;
+	height:18px;
+	text-align:center;
+	padding-bottom:2px;
+	border-radius:10px;
+	background:rgb(230,230,251);
+	font-size:14px;
+	position:absolute;
+	left:770px;
+	top:15px;
+}
+.box{
+	width:790px;
+	padding-left:5px;
+	border-radius:4px;
+	background:rgb(94,153,156);
+	/* display:none; */
+}
+.text{
+	width:780px;
+	height:30px;
+	border-radius:4px;
+	background:white;
+	padding-left:10px;
+	font-size:14px;
+	background: white;
+	margin-bottom:10px;
+	position:relative;
+}
+.text input{
+	margin-top:8px;
+	outline:none;
+	background:white;
+	margin-right:10px;
+}
+em{
+	font-style:normal;
+	font-weight:700;
+}
+.text b{
+	display:inline-block;
+	width:25px;
+	height:25px;
+	background:url(bg.png);
+	background-size:25px 25px;
+	position:absolute;
+	left:760px;
+	top:3px;
+}
