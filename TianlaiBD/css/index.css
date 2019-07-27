@@ -1,0 +1,158 @@
+body, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li, form, table, tr, th, td{
+	margin:0;
+	padding:0;
+}
+a{
+ text-decoration: none;
+}
+html{
+	font-size:26.67vw;
+}
+img{
+	border: none;
+	display:block;
+}
+/*header*/
+header{
+	height: .46rem;
+	background:#fd4d5f;
+	display:-webkit-flex;
+	-webkit-justify-content: space-between;
+	-webkit-align-items: center;
+}
+header img{
+	width:.21rem;
+	height:.2rem;
+}
+.firstImg{
+	margin-left:.12rem;
+}
+header p{
+	font-size:16px;
+	color:white;
+}
+.secImg{
+	margin-right:.11rem;
+}
+/*banner*/
+.banner img{
+	border-radius:.08rem;
+}
+/*section*/
+.content{
+	width: 100%;
+	height:.7rem;
+	display:-webkit-flex;
+	background: #ffffff;
+}
+.pic{
+	width: .4rem;
+	height:.4rem;
+	margin: auto .15rem;
+	float: left;
+}
+.content_r{
+	width:2.67rem;
+	border-bottom: 1px solid #e5e5e5;
+}
+.content_r h4{
+	color: #121212;
+	font-size: 16px;
+	line-height: 16px;
+	margin-top:.17rem;
+	margin-bottom:.1rem;
+}
+.content_r p{
+	color: #aaaaaa;
+	font-size: 13px;
+	line-height: 13px;
+	display: -webkit-flex;
+}
+.content_r p img{
+	margin-right:.06rem;
+}
+.pic2{
+	width: .06rem;
+	height:.11rem;
+	margin-top:.3rem;
+	margin-left:.17rem;
+}
+.conlast img{
+	width:.13rem;
+	height:.13rem;
+}
+/*near*/
+.near{
+	margin-top:.15rem;
+}
+.neartop{
+	width:100%;
+	height:.48rem;
+	display: -webkit-flex;
+/*	-webkit-justify-content: space-around;*/
+	-webkit-align-items: center;
+}
+.neartop img{
+ 	width:.16rem;
+ 	height:.2rem;
+ 	margin-left:.17rem;
+ 	margin-right: .13rem;
+}
+.neartop h4{
+	font-size:15px;
+	margin-right: 1.49rem;
+}
+.neartop p{
+	font-size:13px;
+	color:#aaaaaa;
+}
+.near .pic2{
+	width: .06rem;
+	height:.11rem;
+	margin: auto .16rem;
+}
+.people{
+	display: -webkit-flex;
+	-webkit-justify-content: space-around;
+	overflow-x:auto;
+}
+.people a{
+	width: 20%;
+}
+.people img{
+	width:.5rem;
+	height:.5rem;
+	margin-top:.03rem;
+}
+.people span{
+	display: block;
+	color:#333333;
+	font-size: 13px;
+	text-align: center;
+	margin-top:.1rem;
+	margin-bottom: .15rem;
+}
+/*footer*/
+.last{
+	width:100%;
+	height:.45rem;
+	display: -webkit-flex;
+	-webkit-justify-content: space-around;
+}
+.last img{
+	width:.22rem;
+	height:.22rem;
+	margin-top:.05rem;
+}
+.last span{
+	display: block;
+	color:#b9b9b9;
+	font-size: 10px;
+	text-align: center;
+	margin-top:.08rem;
+	margin-bottom: .04rem;
+}
+.last .cen{
+	width:.41rem;
+	height:.41rem;
+}
