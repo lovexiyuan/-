@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户注册</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="css/reg.css">
+		<link rel="stylesheet" href="css/footer.css">
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<div class="header">
+				<div class="logo">
+					<img src="img/logo_new.png" alt="">
+					<span>用户注册</span>
+				</div>
+				<div class="logo_right">
+					<span>已有诺心账号？</span>
+					<a href="login.html">请登录</a>
+				</div>
+			</div>
+		</header>
+		<!-- section -->
+		<section>
+			<div class="form">
+				<div class="tel"><i class="icon_ph"></i><input type="text" placeholder="手机号码"></div>
+				<div class="tel"><i class="icon_ps"></i><input type="password" placeholder="6-12位密码"></div>
+				<div class="tel"><i class="icon_cps"></i><input type="password" placeholder="确认密码"></div>
+				<p>请拖动滑块完成验证<span>&nbsp;&nbsp;》&nbsp;</span></p>
+				<div class="tel tel_test"><i class="icon_cpt"></i><input type="text" placeholder="手机验证码"><button>发送验证码</button></div>
+				<input class="regnow" type="button" value="立即注册">
+				<div class="tel tel_check"><input class="checkbox" type="checkbox">我已阅读并同意<a href="">《诺心lecake用户服务协议》</a></div>
+			</div>
+			
+		</section>
+		<!-- aside -->
+		<aside></aside>
+		<!-- footer -->
+		<footer></footer>
+	</body>
+</html>
+<script src="js/myjQuery.js"></script>
+<script>
+	$(function(){
+		$("aside").load("load/footer.html .loadaside",function(){
+		});
+		$("footer").load("load/footer.html .loadfoot",function(){
+		});
+	});
+	
+</script>

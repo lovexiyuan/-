@@ -1,0 +1,259 @@
+body, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li, form, table, tr, th, td,button,img,input{
+	margin:0;
+	padding:0;
+	border:0;
+}
+a{
+ text-decoration: none;
+ color:black;
+}
+li{
+	list-style: none;
+}
+.bighead{
+	position:relative;
+}
+i{
+	display:inline-block;
+	width:20px;
+	height:20px;
+}
+/* header */ 
+header{
+	    width: 100%;
+        margin: 0 auto;
+        position: relative;
+		height:25px;
+		background:#f9f9f9;
+}
+.login{
+	float:right;
+	margin-right:11%;
+}
+.weipublic{
+	background:url(../img/icons.png);
+	background-position:-330px -248px;
+	margin-right:6px;
+}
+#reg{
+	margin-right:20px;
+}
+/* nav */
+nav{
+	width:100%;
+	border-bottom:1px solid lightgray;
+}
+
+.brand{
+	max-width:1200px;
+	margin: 0 auto;
+	text-align:center;
+}
+.search{
+	display:flex;
+	justify-content:space-between;
+	padding:25px 0;
+	margin:0 auto;
+	text-align:center;
+}
+.Y-search input{
+	outline:none;
+	height:22px;
+	border-bottom:1px solid black;
+	margin-right:10px;
+	vertical-align:bottom;
+}
+.Y-search .Ysearch{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	margin-right:12px;
+	vertical-align:bottom;
+}
+.Y-search .Ysearch1{
+	background:url(../img/icons.png);
+	background-position:-330px -203px;
+}
+.Y-search .Ysearch2{
+	background:url(../img/icons.png);
+	background-position:-249px -244px;
+}
+.icon_address{
+	background:url(../img/icons.png);
+	background-position:-292px -210px;
+}
+.navi{
+	margin:0 auto;
+	padding:24px 0;
+}
+.navlist{
+	color: black;
+	font-size: 16px;
+	padding:0 40px;
+	text-align: center;
+	position:relative;
+}
+.navlist:hover{
+	color: orange;
+	background:url(../img/icon_egg.png) no-repeat left center;
+}
+.navlist::before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 42px;
+	width: 0;
+	height: 4px;
+	background: orange;
+	transition: all .3s;
+}
+.navlist:hover::before{
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+
+
+section{
+	width:100%;
+	margin:0 auto;
+}
+.top_section{
+	margin:0 auto;
+	width:80%;
+	background:rgb(249,249,249);
+	padding:18px 2%;
+}
+.tastenav{
+	background:white;
+	padding:18px 2%;
+}
+.taste{
+	display:flex;
+	font-size:14px;
+	height:34px;
+	line-height:34px;
+	color:gray;
+}
+.taste a{
+	font-size:14px;
+	color:gray;
+	padding:0 25px;
+	text-align: center;
+}
+.taste .All{
+	color:red;
+}
+.taste a:hover{
+	color:red;
+}
+.taste h2{
+	font-size:14px;
+	font-weight:100;
+}
+.topSection .goods{
+	background:rgb(249,249,249);
+	display:flex;
+	flex-wrap:wrap;
+}
+.topSection .goods .singleGood{
+	padding:18px 2%;
+	width:21%;
+}
+.singleGood img{
+	width:100%;
+}
+.singleGood b{
+	background:rgb(204,169,118);
+	color:white;
+	text-indent:2px;
+	font-size:13px;
+	line-height:30px;
+}
+.singleGood span{
+	font-size:12px;
+	color: #949494;
+	line-height:20px;
+}
+.singleGood h6{
+	font-weight:100;
+	line-height:20px;
+	font-size:16px;
+	margin:4px 0;
+}
+.singleGood:hover{
+	background:rgb(252,237,239);
+}
+.singleGood img:hover{
+	transform:scale(1.03);
+	transition: transform 1s;
+}
+.singleGood p{
+	/* background:rgb(214,169,218); */
+	padding:0 2px;
+}
+.singleGood a:last-child{
+	color:red;
+}
+.singleGood a:last-child:hover{
+	text-decoration:underline;
+}
+
+
+
+
+/* aside */
+aside{
+	position:fixed;
+	z-index:9;
+	top:35%;
+	right:.5%;
+}
+.followus{
+	margin-bottom:5px;
+	border:1px solid lightgray;
+	text-align:center;
+	background:white;
+}
+.followus img{
+	width:100%;
+}
+
+
+/* footer */
+footer{
+	width:100%;
+	height:200px;
+	background:#ebebeb;
+	color:#3e3e3e;
+	font-family: "Helvetica Neue", Helvetica, Arial, "hyzj", "SimHei", "SimSun", sans-serif;
+	font-size:14px;
+	padding:20px 0;
+	text-align:center;
+}
+footer p{
+	margin:20px auto;
+}
+footer p span{
+	display:inline-block;
+	width:28px;
+	height:25px;
+	background:url(../img/icons.png);
+	background-position:192px -3px;
+}
+
+.footinfo a{
+	padding:0 12px;
+}
+footer .footinfo span{
+	display:inline-block;
+	width:28px;
+	height:25px;
+	background:url(../img/icons.png);
+	background-position:152px -3px;
+}
+@media screen and (max-width: 960px){
+	.topSection .goods .singleGood{
+		width:33%;
+	}
+}

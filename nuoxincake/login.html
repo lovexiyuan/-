@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户登陆</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<!-- <link rel="stylesheet" href="css/reg.css"> -->
+		<link rel="stylesheet" href="css/login.css">
+		<link rel="stylesheet" href="css/footer.css">
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<img src="img/logo_new.png" alt="">
+		</header>
+		<!-- section -->
+		<section>
+			<div class="form">
+					<ul class="loginway">
+						<li>手机验证登录</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li>账户密码登录</li>
+					</ul>
+					<div class="inputTell">
+						<div class="tel"><i class="icon_ph"></i><input type="text" placeholder="手机号码"></div>
+						<div class="tel tel-test"><i class="icon_cpt"></i><input type="text" placeholder="请输入验证码"><span>viyk</span><button class="change">换一个</button></div>
+						<div class="tel tel_test"><i class="icon_cpt"></i><input type="text" placeholder="手机验证码"><button>发送验证码</button></div>
+						<div class="tel tel_test"><input class="regnow" type="button" value="立即登陆"></div>
+						<ul class="forget">
+							<li>忘记密码</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<li >还没有账号？<a href="register.html" style="color:red;">立即注册</a></li>
+						</ul>
+						<p class="other"><span></span>其他登陆方式<span></span></p>
+						<div class="tel tel-a"><a class="aaa" href=""></a><a class="aaa" href=""></a></div>
+					</div>
+
+	
+			</div>
+			
+		</section>
+		<!-- aside -->
+		<aside></aside>
+		<!-- footer -->
+		<footer></footer>
+	</body>
+</html>
+<script src="js/myjQuery.js"></script>
+<script>
+	$(function(){
+		$("aside").load("load/footer.html .loadaside",function(){
+		});
+		$("footer").load("load/footer.html .loadfoot",function(){
+		});
+	});
+	
+</script>

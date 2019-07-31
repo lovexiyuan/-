@@ -1,0 +1,158 @@
+body, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li, form, table, tr, th, td,button,img,input{
+	margin:0;
+	padding:0;
+	border:0;
+}
+a{
+ text-decoration: none;
+ color:black;
+}
+li{
+	list-style: none;
+}
+section{
+	background:url(../img/login.jpg);
+	height:520px;
+	background-position:51%;
+	position:relative;
+}
+header{
+	width:100%;
+	height:75px;
+	border-bottom:none;
+	line-height:75px;
+	padding-left:10%;
+}
+.form{
+	width:25%;
+	position:absolute;	
+	background:rgb(251,247,243);
+	left:55%;
+	top:10%;
+	padding:10px 2%;
+}
+.loginway{
+	padding:0 57px;
+	color:red;
+	display:flex;
+	font-size:14px;
+	margin:10px auto 30px; 
+}
+
+.tel i{
+	display:inline-block;
+	width:20px;
+	height:20px;
+}
+.icon_ph{
+	background:url(../img/icons_2.png);
+	background-position:-55px -8px;
+}
+.icon_ps{
+	background:url(../img/icons_2.png);
+	background-position:-13px -8px;
+}
+.icon_cpt{
+	background:url(../img/icons_2.png);
+	background-position:-88px -8px;
+}
+input{
+	width:249px;
+	height:30px;
+	outline:none;
+	background:rgb(251,247,243);
+}
+
+.tel{
+	width:80%;
+	margin:0 auto 15px;
+	border-bottom:1px solid rgb(229,229,229);
+}
+.tel-test input{
+	width:149px;
+	margin-right:10px;
+}
+.tel-test span{
+	display:inline-block;
+	width:45px;
+	height:30px;
+	background:rgb(229,229,229);
+	line-height:30px;
+	font-size:14px;
+	text-align:center;
+	margin-right:5px;
+}
+.tel-test .change{
+	width:40px;
+	height:30px;
+	background:rgb(252,240,246);
+	color:black;
+}
+.tel_test{
+	border-bottom:1px solid rgb(229,229,229);
+}
+.tel_test input{
+	width:149px;
+	margin-right:10px;
+}
+.tel button{
+	width:90px;
+	height:30px;
+	background:orangered;
+	color:white;
+}
+.tel .regnow{
+	width:281px;
+	height:50px;
+	background:orangered;
+	color:white;
+	font-size:16px;
+	marin:0 auto;
+}
+.forget{
+	width:80%;
+	color:black;
+	display:flex;
+	justify-content:space-between;
+	font-size:12px;
+	padding:0 44px;
+}
+.other{
+	width:80%;
+	height:31px;
+	color:gray;
+	text-align:center;
+	line-height:30px;
+	margin:0 auto;
+}
+.other span{
+	display:inline-block;
+	width:78px;
+	height:1px;
+	background:gray;
+}
+.tel-a{
+	border-bottom:none;
+	margin:0 auto;
+	text-align:center;
+}
+.aaa{
+	display:inline-block;
+	width:40px;
+	height:40px;
+	margin-right:20px;
+	border-radius:50%;
+}
+.aaa:first-child{
+	background:url(../img/icon_social.png);
+	background-position:-20px -20px;
+}
+.aaa:last-child{
+	background:url(../img/icon_social.png);
+	background-position:-20px -100px;
+}
+@media screen and (max-width: 960px){
+	.header{
+		width:50%;
+	}
+}
